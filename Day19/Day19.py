@@ -51,9 +51,9 @@ for i in range(0, len(start)):
     if start[i] in swaps.keys():
         Moleculies = make_swap(start, i, swaps, Moleculies)
 
-print(len(Moleculies))
+print("Part 1:", len(Moleculies))
 
-print(start)
+# print(start)
 
 num_atoms = len(start)
 num_y = 0
@@ -69,5 +69,5 @@ for each in start:
         num_Ar += 1
 
 
-print(num_atoms, num_Ar, num_Rn, num_y)
-print(num_atoms - num_Ar - num_Rn - 2 * num_y - 1)
+# print(num_atoms, num_Ar, num_Rn, num_y)
+print("Part 2:", num_atoms - num_Ar - num_Rn - 2 * num_y - 1)
